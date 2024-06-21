@@ -1,0 +1,21 @@
+diff -Naur ivsc-driver-a6dccbbf5a955489d20d996234b6ebb481183ed7.old/drivers/misc/mei/hw-vsc.c ivsc-driver-a6dccbbf5a955489d20d996234b6ebb481183ed7/drivers/misc/mei/hw-vsc.c
+--- ivsc-driver-a6dccbbf5a955489d20d996234b6ebb481183ed7.old/drivers/misc/mei/hw-vsc.c	2024-05-18 21:43:52.453395025 +0200
++++ ivsc-driver-a6dccbbf5a955489d20d996234b6ebb481183ed7/drivers/misc/mei/hw-vsc.c	2024-05-18 21:46:09.331383209 +0200
+@@ -339,14 +339,9 @@
+ /* %s is sensor name, need to be get and format in runtime */
+ static char *fw_name_template[][3] = {
+ 	{
+-		"vsc/soc_a1/ivsc_fw_a1.bin",
+-		"vsc/soc_a1/ivsc_pkg_%s_0_a1.bin",
+-		"vsc/soc_a1/ivsc_skucfg_%s_0_1_a1.bin",
+-	},
+-	{
+-		"vsc/soc_a1_prod/ivsc_fw_a1_prod.bin",
+-		"vsc/soc_a1_prod/ivsc_pkg_%s_0_a1_prod.bin",
+-		"vsc/soc_a1_prod/ivsc_skucfg_%s_0_1_a1_prod.bin",
++		"intel/vsc/ivsc_fw.bin",
++		"intel/vsc/ivsc_pkg_%s_0.bin",
++		"intel/vsc/ivsc_skucfg_%s_0_1.bin",
+ 	},
+ };
+ 
